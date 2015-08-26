@@ -1,0 +1,84 @@
+@import 'base/variables'
+
+#main
+  @include outer-container
+
+ol
+  font-size: 1em
+  font-weight: 500
+
+  li
+    margin: .5em 0
+
+    span
+      display: inline-block
+
+      &:before
+        content: '/'
+        margin: 0 .3em
+
+blockquote
+  border-left: 2px solid $medium-gray
+  padding-left: em(25)
+
+.no-bullets
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+/* Neat columns */
+.large-column
+  @include span-columns(8 of 12)
+
+.small-column
+  @include span-columns(4 of 12)
+
+/* Pagination */
+.previous
+  float: left
+
+.paginate-bottom
+  margin-top: em(25)
+
+  .next
+    float: right
+
+  .page-numbers
+    text-align: center
+
+/* Code highlighting */
+.highlight
+  background-color: #fff !important
+  border: em(1) solid $light-gray
+  @include border-top-radius(5px)
+  @include border-right-radius(5px)
+  @include border-bottom-radius(5px)
+  @include border-left-radius(5px)
+
+  table
+    margin: 0 auto
+
+  .code
+    padding: 0
+
+    pre
+      overflow-x: scroll
+      word-break: inherit
+      word-wrap: inherit
+      padding-left: em(15)
+      padding-right: em(15)
+      padding-top: em(5)
+      padding-bottom: em(10)
+
+  .gutter
+    width: em(35)
+    padding-right: em(5)
+    background-color: $light-gray
+    vertical-align: top
+    color: $medium-gray
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none

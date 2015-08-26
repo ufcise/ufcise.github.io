@@ -1,0 +1,30 @@
+@import 'base/variables'
+
+#blog-post
+  .title, .subtitle
+    text-align: center
+
+  .subtitle
+    margin-top: em(-15)
+
+  p
+    text-align: justify
+
+  img
+    display: block
+    margin: 0 auto
+
+  p, img, .gist, .return_link, .highlight
+    margin-bottom: em(25)
+
+  .navigation
+    padding-bottom: em(25)
+
+    .prev
+      float: left
+      @include span-columns(6 of 12)
+
+    .next
+      float: right
+      text-align: right
+      @include span-columns(6 of 12)
