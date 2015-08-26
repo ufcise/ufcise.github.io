@@ -4,9 +4,9 @@ Unofficial site for UF CISE maintained by the UF CISE community. Powered by Midd
 ## To-do:
 
 - [x] Social media info
-- [] Student organization list/info
-- [] Specific class list/info
-- [] Anything else?
+- [ ] Student organization list/info
+- [ ] Specific class list/info
+- [ ] Anything else?
 
 ## Organization
 
